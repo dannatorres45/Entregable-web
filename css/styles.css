@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+   background: #fff2b8;
+    margin: 0;
+    color: #1e293b;
+}
+
+/* NAV */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1559028012-481c04fa702d');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TITULOS */
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* TARJETAS */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* EQUIPO */
+.equipo-card {
+    text-align: center;
+    padding: 25px;
+}
+
+.foto-equipo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+
+    border: 3px solid #6366f1;
+    box-shadow: 0 4px 12px rgba(99,102,241,0.4);
+
+    transition: 0.3s;
+}
+
+.foto-equipo:hover {
+    transform: scale(1.08);
+}
+
+/* FORM */
+input, textarea {
+    border-radius: 8px ;
+    border: 1px solid #cbd5e1 ;
+    padding: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #6366f1 ;
+    box-shadow: 0 0 5px rgba(99,102,241,0.4);
+}
+
+/* BOTONES */
+.btn-primary {
+    background: #4f46e5;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+.btn-ux:hover {
+    background: #1e40af;
+}
+
+/* GALERÍA */
+img.img-fluid {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* ACORDEÓN */
+.acordeon .item {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.titulo {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #eef2ff;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.titulo:hover {
+    background: #e0e7ff;
+}
+
+.contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0 15px;
+    color: #475569;
+}
+
+.item.activo .contenido {
+    max-height: 200px; /* aumenté para que no corte texto */
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        height: 250px;
+    }
+
+    .foto-equipo {
+        width: 80px;
+        height: 80px;
+    }
+}
+img.img-fluid {
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    height: 220px;
+    object-fit: cover;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.05);
+}
