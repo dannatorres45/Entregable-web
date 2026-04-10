@@ -1,8 +1,8 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-   background: #fff2b8;
+   background: #cdcefc;
     margin: 0;
-    color: #1e293b;
+    color: #192230;
 }
 
 /* NAV */
@@ -133,7 +133,7 @@ img.img-fluid:hover {
 }
 
 .item.activo .contenido {
-    max-height: 200px; /* aumenté para que no corte texto */
+    max-height: 1000px;
     padding: 15px;
 }
 
@@ -158,4 +158,15 @@ img.img-fluid {
 
 img.img-fluid:hover {
     transform: scale(1.05);
+}
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 70px; 
+}
+
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
 }
